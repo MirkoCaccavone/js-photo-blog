@@ -29,6 +29,7 @@ h1{
 
 main{
     background-image: url(../img/cork.png);
+    padding-bottom: 100px;
 }
 
 #container{
@@ -45,17 +46,28 @@ main{
     height: 300px;
     background-color: #fff;
     margin-bottom: 20px;
+    padding: 10px;
+}
+
+.card:hover{
+    transform: rotate(40deg);
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.card:hover .pinImg{
+    display: none;
 }
 
 .containerPhoto{
-    padding: 10px;
     height: 80%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .pinImg{
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 50%;
     transform: translate(-50%);
     width: 30px;
@@ -68,4 +80,5 @@ main{
 
 .text{
     font-size: 25px;
+    font-weight: bold;
 }
