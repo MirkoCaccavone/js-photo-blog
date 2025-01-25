@@ -83,42 +83,47 @@ main{
     font-weight: bold;
 }
 
-.hidden{
-    display: none;
+
+/********************************
+   MEDIA QUERIES
+*********************************/
+
+@media screen and (max-width: 1000px) {
+    #container{
+        max-width: 80%;
+    }
 }
 
-#containerPopup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+@media screen and (max-width: 768px) {
+    #container{
+        max-width: 70%;
+    }
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+    .text{
+        font-size: 20px;
+    }
 }
 
-#popupContent {
-    position: relative;
-    max-width: 50%;
-    margin: auto;
+@media screen and (max-width: 576px){
+    header{
+        height: 80px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .card  {
+        width: 80%;
+        margin: auto;
+    }
 }
 
-.closePopUp{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 20px;
-    width: 90px;
-    height: 30px;
-    font-size: 20px;
-}
-
-#popupImg {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+@media screen and (min-width: 1440px){
+    main{
+        min-height: 100vh;
+    }
+    #container{
+        max-width: 50%;
+    }
 }
