@@ -36,7 +36,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
             
             // aggiungiamo il contenuto in pagina usando innerHTML
             container.innerHTML += cardHtml;
-        }
+        };
 
         // richiamiamo la classe card aggiunta in precedenza salvandola in una costante
         const cards = document.querySelectorAll(".card");
@@ -71,7 +71,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
 
 // Chiudi il popup
 closePopUp.addEventListener('click', () => {
-    
+
     // al click sul bottone aggiungiamo la classe hidden per nascondelo
     popUp.classList.add('hidden'); 
 });

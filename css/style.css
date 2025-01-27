@@ -91,11 +91,8 @@ main{
     display: none;
 }
 
-#containerPopUp{
-    text-align: center;
-}
-
 #popUp {
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -121,7 +118,7 @@ main{
 }
 
 #popUpImg img{
-    width: 80%;
+    width: 70%;
 }
 
 
