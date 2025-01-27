@@ -53,6 +53,7 @@ main{
     transform: rotate(40deg);
     z-index: 1;
     transition: 0.7s;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card:hover .pinImg{
