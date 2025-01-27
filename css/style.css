@@ -83,14 +83,57 @@ main{
     font-weight: bold;
 }
 
+/********************************
+           POPUP RULES
+*********************************/
+.hidden{
+    display: none;
+}
+
+#containerPopUp{
+    text-align: center;
+}
+
+#popUp {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;     
+}
+
+#closePopUp{
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 25px auto;
+}
+
+#popUpImg{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 40px;
+}
+
+#popUpImg img{
+    width: 80%;
+}
+
 
 /********************************
-   MEDIA QUERIES
+          MEDIA QUERIES
 *********************************/
 
 @media screen and (max-width: 1000px) {
     #container{
         max-width: 80%;
+    }
+    #popUpImg img{
+        width: 100%;
     }
 }
 
